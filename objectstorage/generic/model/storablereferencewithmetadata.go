@@ -7,12 +7,12 @@ import (
 
 	"github.com/cockroachdb/errors"
 
-	"github.com/iotaledger/hive.go/core/model"
-	"github.com/iotaledger/hive.go/lo"
-	"github.com/iotaledger/hive.go/objectstorage"
-	"github.com/iotaledger/hive.go/runtime/syncutils"
-	"github.com/iotaledger/hive.go/serializer/v2/byteutils"
-	"github.com/iotaledger/hive.go/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/core/model"
+	"github.com/izuc/zipp.foundation/lo"
+	"github.com/izuc/zipp.foundation/objectstorage"
+	"github.com/izuc/zipp.foundation/runtime/syncutils"
+	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
+	"github.com/izuc/zipp.foundation/serializer/v2/serix"
 )
 
 // StorableReferenceWithMetadata is the base type for all storable reference models. It should be embedded in a wrapper type.

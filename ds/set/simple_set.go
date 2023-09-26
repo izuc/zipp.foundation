@@ -5,9 +5,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/iotaledger/hive.go/ds/types"
-	"github.com/iotaledger/hive.go/serializer/v2"
-	"github.com/iotaledger/hive.go/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/ds/types"
+	"github.com/izuc/zipp.foundation/serializer/v2"
+	"github.com/izuc/zipp.foundation/serializer/v2/serix"
 )
 
 // simpleSet implements a non-thread safe Set.

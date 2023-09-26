@@ -1,7 +1,7 @@
 package generic
 
 import (
-	"github.com/iotaledger/hive.go/kvstore"
+	"github.com/izuc/zipp.foundation/kvstore"
 )
 
 // NewStoreWithRealm creates a new kvstore.KVStore with the given the store and prefixes.

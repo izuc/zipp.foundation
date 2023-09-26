@@ -1,7 +1,7 @@
 package priorityqueue
 
 import (
-	"github.com/iotaledger/hive.go/constraints"
+	"github.com/izuc/zipp.foundation/constraints"
 )
 
 // queue defines a heap based queue.

@@ -12,7 +12,7 @@ import (
 	"github.com/pkg/errors"
 	"go.uber.org/dig"
 
-	"github.com/iotaledger/hive.go/app"
+	"github.com/izuc/zipp.foundation/app"
 )
 
 func init() {

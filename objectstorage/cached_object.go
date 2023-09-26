@@ -4,10 +4,10 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/iotaledger/hive.go/kvstore"
-	"github.com/iotaledger/hive.go/objectstorage/typeutils"
-	"github.com/iotaledger/hive.go/runtime/syncutils"
-	"github.com/iotaledger/hive.go/runtime/timed"
+	"github.com/izuc/zipp.foundation/kvstore"
+	"github.com/izuc/zipp.foundation/objectstorage/typeutils"
+	"github.com/izuc/zipp.foundation/runtime/syncutils"
+	"github.com/izuc/zipp.foundation/runtime/timed"
 )
 
 type CachedObject interface {

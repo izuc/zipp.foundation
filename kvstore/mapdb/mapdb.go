@@ -7,9 +7,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/iotaledger/hive.go/ds/types"
-	"github.com/iotaledger/hive.go/kvstore"
-	"github.com/iotaledger/hive.go/serializer/v2/byteutils"
+	"github.com/izuc/zipp.foundation/ds/types"
+	"github.com/izuc/zipp.foundation/kvstore"
+	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
 )
 
 // mapDB is a simple implementation of KVStore using a map.

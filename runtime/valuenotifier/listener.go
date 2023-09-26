@@ -6,7 +6,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/iotaledger/hive.go/ds/shrinkingmap"
+	"github.com/izuc/zipp.foundation/ds/shrinkingmap"
 )
 
 type Notifier[T comparable] struct {

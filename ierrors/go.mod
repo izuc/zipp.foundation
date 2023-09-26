@@ -1,4 +1,4 @@
-module github.com/iotaledger/hive.go/ierrors
+module github.com/izuc/zipp.foundation/ierrors
 
 go 1.20
 

@@ -7,8 +7,8 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/iotaledger/hive.go/codegen"
-	"github.com/iotaledger/hive.go/lo"
+	"github.com/izuc/zipp.foundation/codegen"
+	"github.com/izuc/zipp.foundation/lo"
 )
 
 // Variadic is a template that translates code into a set of variadic implementations with generic type parameters.

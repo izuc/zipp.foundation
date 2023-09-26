@@ -1,8 +1,8 @@
 package eventticker
 
 import (
-	"github.com/iotaledger/hive.go/core/slot"
-	"github.com/iotaledger/hive.go/runtime/event"
+	"github.com/izuc/zipp.foundation/core/slot"
+	"github.com/izuc/zipp.foundation/runtime/event"
 )
 
 // Events represents events happening on a EventTicker.

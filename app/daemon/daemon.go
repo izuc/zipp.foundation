@@ -9,8 +9,8 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/iotaledger/hive.go/logger"
-	"github.com/iotaledger/hive.go/runtime/syncutils"
+	"github.com/izuc/zipp.foundation/logger"
+	"github.com/izuc/zipp.foundation/runtime/syncutils"
 )
 
 // Errors for the daemon package.

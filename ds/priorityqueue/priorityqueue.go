@@ -3,7 +3,7 @@ package priorityqueue
 import (
 	"container/heap"
 
-	"github.com/iotaledger/hive.go/constraints"
+	"github.com/izuc/zipp.foundation/constraints"
 )
 
 // PriorityQueue is a heap based priority queue.

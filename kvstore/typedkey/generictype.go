@@ -6,7 +6,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/iotaledger/hive.go/kvstore"
+	"github.com/izuc/zipp.foundation/kvstore"
 )
 
 type GenericType[T any] struct {

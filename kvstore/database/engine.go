@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/iotaledger/hive.go/runtime/ioutils"
+	"github.com/izuc/zipp.foundation/runtime/ioutils"
 )
 
 type Engine string

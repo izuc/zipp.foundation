@@ -7,8 +7,8 @@ import (
 	"github.com/fbiville/markdown-table-formatter/pkg/markdown"
 	flag "github.com/spf13/pflag"
 
-	"github.com/iotaledger/hive.go/app/configuration"
-	"github.com/iotaledger/hive.go/apputils/parameter"
+	"github.com/izuc/zipp.foundation/app/configuration"
+	"github.com/izuc/zipp.foundation/apputils/parameter"
 )
 
 func escapeAsterisk(text string) string {

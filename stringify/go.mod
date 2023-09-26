@@ -1,4 +1,4 @@
-module github.com/iotaledger/hive.go/stringify
+module github.com/izuc/zipp.foundation/stringify
 
 go 1.20
 

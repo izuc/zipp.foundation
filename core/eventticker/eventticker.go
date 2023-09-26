@@ -4,11 +4,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/iotaledger/hive.go/core/memstorage"
-	"github.com/iotaledger/hive.go/core/slot"
-	"github.com/iotaledger/hive.go/crypto"
-	"github.com/iotaledger/hive.go/runtime/options"
-	"github.com/iotaledger/hive.go/runtime/timed"
+	"github.com/izuc/zipp.foundation/core/memstorage"
+	"github.com/izuc/zipp.foundation/core/slot"
+	"github.com/izuc/zipp.foundation/crypto"
+	"github.com/izuc/zipp.foundation/runtime/options"
+	"github.com/izuc/zipp.foundation/runtime/timed"
 )
 
 // region EventTicker //////////////////////////////////////////////////////////////////////////////////////////////////

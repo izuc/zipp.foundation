@@ -5,11 +5,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/iotaledger/hive.go/core/memstorage"
-	"github.com/iotaledger/hive.go/core/slot"
-	"github.com/iotaledger/hive.go/runtime/options"
-	"github.com/iotaledger/hive.go/runtime/syncutils"
-	"github.com/iotaledger/hive.go/runtime/workerpool"
+	"github.com/izuc/zipp.foundation/core/memstorage"
+	"github.com/izuc/zipp.foundation/core/slot"
+	"github.com/izuc/zipp.foundation/runtime/options"
+	"github.com/izuc/zipp.foundation/runtime/syncutils"
+	"github.com/izuc/zipp.foundation/runtime/workerpool"
 )
 
 // region CausalOrder ////////////////////////////////////////////////////////////////////////////////////////////////

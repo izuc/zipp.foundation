@@ -3,7 +3,7 @@ package utils
 import (
 	"sort"
 
-	"github.com/iotaledger/hive.go/kvstore"
+	"github.com/izuc/zipp.foundation/kvstore"
 )
 
 // CopyBytes returns a copy of the source slice.

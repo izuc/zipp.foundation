@@ -7,10 +7,10 @@ import (
 	"github.com/emirpasic/gods/trees/redblacktree"
 	"golang.org/x/xerrors"
 
-	"github.com/iotaledger/hive.go/constraints"
-	"github.com/iotaledger/hive.go/lo"
-	"github.com/iotaledger/hive.go/serializer/v2"
-	"github.com/iotaledger/hive.go/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/constraints"
+	"github.com/izuc/zipp.foundation/lo"
+	"github.com/izuc/zipp.foundation/serializer/v2"
+	"github.com/izuc/zipp.foundation/serializer/v2/serix"
 )
 
 // region Mode /////////////////////////////////////////////////////////////////////////////////////////////////////////

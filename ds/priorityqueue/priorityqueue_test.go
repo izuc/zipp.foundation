@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/iotaledger/hive.go/ds/priorityqueue"
+	"github.com/izuc/zipp.foundation/ds/priorityqueue"
 )
 
 func TestPriorityQueue(t *testing.T) {

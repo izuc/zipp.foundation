@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/app/daemon"
+	"github.com/izuc/zipp.foundation/app/daemon"
 )
 
 // graceTime for go routines to start.

@@ -9,7 +9,7 @@ import (
 
 	"github.com/cockroachdb/errors"
 
-	"github.com/iotaledger/hive.go/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer/v2/serix"
 )
 
 // Immutable is the base type for all immutable models. It should be embedded in a wrapper type.

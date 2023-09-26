@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/iotaledger/hive.go/app/configuration"
+	"github.com/izuc/zipp.foundation/app/configuration"
 )
 
 const (

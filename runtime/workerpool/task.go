@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/iotaledger/hive.go/ds/types"
-	"github.com/iotaledger/hive.go/runtime/debug"
-	"github.com/iotaledger/hive.go/runtime/timeutil"
+	"github.com/izuc/zipp.foundation/ds/types"
+	"github.com/izuc/zipp.foundation/runtime/debug"
+	"github.com/izuc/zipp.foundation/runtime/timeutil"
 )
 
 // Task is a task that is executed by a WorkerPool.

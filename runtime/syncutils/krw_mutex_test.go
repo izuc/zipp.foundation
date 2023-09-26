@@ -3,7 +3,7 @@ package syncutils_test
 import (
 	"testing"
 
-	"github.com/iotaledger/hive.go/runtime/syncutils"
+	"github.com/izuc/zipp.foundation/runtime/syncutils"
 )
 
 func TestKRWMutex_Free(t *testing.T) {

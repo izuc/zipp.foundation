@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/app/configuration"
-	"github.com/iotaledger/hive.go/logger"
+	"github.com/izuc/zipp.foundation/app/configuration"
+	"github.com/izuc/zipp.foundation/logger"
 )
 
 func TestInitGlobalAfterError(t *testing.T) {

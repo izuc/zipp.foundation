@@ -3,9 +3,9 @@ package event
 import (
 	"sync/atomic"
 
-	"github.com/iotaledger/hive.go/lo"
-	"github.com/iotaledger/hive.go/runtime/options"
-	"github.com/iotaledger/hive.go/runtime/workerpool"
+	"github.com/izuc/zipp.foundation/lo"
+	"github.com/izuc/zipp.foundation/runtime/options"
+	"github.com/izuc/zipp.foundation/runtime/workerpool"
 )
 
 // WithMaxTriggerCount sets the maximum number of times an entity shall be triggered.

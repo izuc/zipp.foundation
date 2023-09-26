@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/kvstore"
+	"github.com/izuc/zipp.foundation/kvstore"
 )
 
 var testEntries = []*struct {

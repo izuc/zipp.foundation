@@ -12,10 +12,10 @@ import (
 	"github.com/mr-tron/base58"
 	"golang.org/x/xerrors"
 
-	"github.com/iotaledger/hive.go/crypto/ed25519"
-	"github.com/iotaledger/hive.go/lo"
-	"github.com/iotaledger/hive.go/serializer/v2/marshalutil"
-	"github.com/iotaledger/hive.go/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/crypto/ed25519"
+	"github.com/izuc/zipp.foundation/lo"
+	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/v2/serix"
 )
 
 var (

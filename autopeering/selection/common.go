@@ -3,9 +3,9 @@ package selection
 import (
 	"time"
 
-	"github.com/iotaledger/hive.go/autopeering/mana"
-	"github.com/iotaledger/hive.go/autopeering/peer"
-	"github.com/iotaledger/hive.go/logger"
+	"github.com/izuc/zipp.foundation/autopeering/mana"
+	"github.com/izuc/zipp.foundation/autopeering/peer"
+	"github.com/izuc/zipp.foundation/logger"
 )
 
 // Default values for the global parameters.

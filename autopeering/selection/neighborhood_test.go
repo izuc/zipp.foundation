@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/iotaledger/hive.go/autopeering/distance"
-	"github.com/iotaledger/hive.go/autopeering/peer"
-	"github.com/iotaledger/hive.go/autopeering/peer/peertest"
-	"github.com/iotaledger/hive.go/autopeering/salt"
-	"github.com/iotaledger/hive.go/lo"
+	"github.com/izuc/zipp.foundation/autopeering/distance"
+	"github.com/izuc/zipp.foundation/autopeering/peer"
+	"github.com/izuc/zipp.foundation/autopeering/peer/peertest"
+	"github.com/izuc/zipp.foundation/autopeering/salt"
+	"github.com/izuc/zipp.foundation/lo"
 )
 
 func TestGetFurthest(t *testing.T) {

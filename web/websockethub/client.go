@@ -10,8 +10,8 @@ import (
 	"nhooyr.io/websocket"
 	"nhooyr.io/websocket/wsjson"
 
-	"github.com/iotaledger/hive.go/logger"
-	"github.com/iotaledger/hive.go/runtime/timeutil"
+	"github.com/izuc/zipp.foundation/logger"
+	"github.com/izuc/zipp.foundation/runtime/timeutil"
 )
 
 const (

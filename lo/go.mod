@@ -1,9 +1,9 @@
-module github.com/iotaledger/hive.go/lo
+module github.com/izuc/zipp.foundation/lo
 
 go 1.20
 
 require (
-	github.com/iotaledger/hive.go/constraints v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/constraints v0.0.0-20230417083738-41b63759a6b8
 	github.com/stretchr/testify v1.8.1
 )
 

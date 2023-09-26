@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/lo"
+	"github.com/izuc/zipp.foundation/lo"
 )
 
 func TestPublicKeyFromBytesTooShort(t *testing.T) {

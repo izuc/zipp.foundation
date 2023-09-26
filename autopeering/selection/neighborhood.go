@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/iotaledger/hive.go/autopeering/distance"
-	"github.com/iotaledger/hive.go/autopeering/peer"
-	"github.com/iotaledger/hive.go/crypto/identity"
-	"github.com/iotaledger/hive.go/lo"
+	"github.com/izuc/zipp.foundation/autopeering/distance"
+	"github.com/izuc/zipp.foundation/autopeering/peer"
+	"github.com/izuc/zipp.foundation/crypto/identity"
+	"github.com/izuc/zipp.foundation/lo"
 )
 
 type Neighborhood struct {

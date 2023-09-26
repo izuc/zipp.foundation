@@ -32,17 +32,17 @@ func TestErrors(t *testing.T) {
 
 	// check that there is no duplicated stacktrace included
 	errStacktrace := WithStack(New("errStacktrace"))
-	require.Equal(t, 1, strings.Count(errStacktrace.Error(), "github.com/iotaledger/hive.go/ierrors.TestErrors"))
+	require.Equal(t, 1, strings.Count(errStacktrace.Error(), "github.com/izuc/zipp.foundation/ierrors.TestErrors"))
 
 	err6 := Errorf("err%d: %w", 6, errStacktrace)
-	require.Equal(t, 1, strings.Count(err6.Error(), "github.com/iotaledger/hive.go/ierrors.TestErrors"))
+	require.Equal(t, 1, strings.Count(err6.Error(), "github.com/izuc/zipp.foundation/ierrors.TestErrors"))
 
 	err7 := Wrap(errStacktrace, "err7")
-	require.Equal(t, 1, strings.Count(err7.Error(), "github.com/iotaledger/hive.go/ierrors.TestErrors"))
+	require.Equal(t, 1, strings.Count(err7.Error(), "github.com/izuc/zipp.foundation/ierrors.TestErrors"))
 
 	err8 := Wrapf(errStacktrace, "%s", "err8")
-	require.Equal(t, 1, strings.Count(err8.Error(), "github.com/iotaledger/hive.go/ierrors.TestErrors"))
+	require.Equal(t, 1, strings.Count(err8.Error(), "github.com/izuc/zipp.foundation/ierrors.TestErrors"))
 
 	err9 := WithStack(errStacktrace)
-	require.Equal(t, 1, strings.Count(err9.Error(), "github.com/iotaledger/hive.go/ierrors.TestErrors"))
+	require.Equal(t, 1, strings.Count(err9.Error(), "github.com/izuc/zipp.foundation/ierrors.TestErrors"))
 }

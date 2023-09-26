@@ -1,8 +1,8 @@
 package event
 
 import (
-	"github.com/iotaledger/hive.go/runtime/options"
-	"github.com/iotaledger/hive.go/runtime/workerpool"
+	"github.com/izuc/zipp.foundation/runtime/options"
+	"github.com/izuc/zipp.foundation/runtime/workerpool"
 )
 
 // Hook is a container that holds a trigger function and its trigger settings.

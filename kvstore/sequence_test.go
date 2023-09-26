@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/kvstore"
-	"github.com/iotaledger/hive.go/kvstore/mapdb"
+	"github.com/izuc/zipp.foundation/kvstore"
+	"github.com/izuc/zipp.foundation/kvstore/mapdb"
 )
 
 var sequenceKey = []byte("test_sequence")

@@ -3,7 +3,7 @@ package walker
 import (
 	"container/list"
 
-	"github.com/iotaledger/hive.go/ds/set"
+	"github.com/izuc/zipp.foundation/ds/set"
 )
 
 // region Walker /////////////////////////////////////////////////////////////////////////////////////////////////////////

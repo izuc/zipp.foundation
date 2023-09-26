@@ -3,8 +3,8 @@ package generic
 import (
 	"time"
 
-	"github.com/iotaledger/hive.go/kvstore/debug"
-	"github.com/iotaledger/hive.go/objectstorage"
+	"github.com/izuc/zipp.foundation/kvstore/debug"
+	"github.com/izuc/zipp.foundation/objectstorage"
 )
 
 type (

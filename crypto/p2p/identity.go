@@ -8,7 +8,7 @@ import (
 	libp2pcrypto "github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/pkg/errors"
 
-	"github.com/iotaledger/hive.go/crypto/pem"
+	"github.com/izuc/zipp.foundation/crypto/pem"
 )
 
 // LoadOrCreateIdentityPrivateKey loads an existing Ed25519 based identity private key

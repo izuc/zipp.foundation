@@ -1,8 +1,8 @@
 package logger
 
 import (
-	"github.com/iotaledger/hive.go/app/configuration"
-	"github.com/iotaledger/hive.go/logger"
+	"github.com/izuc/zipp.foundation/app/configuration"
+	"github.com/izuc/zipp.foundation/logger"
 )
 
 // InitGlobalLogger initializes the global logger from the provided config.

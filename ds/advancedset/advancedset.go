@@ -6,10 +6,10 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/iotaledger/hive.go/ds/orderedmap"
-	"github.com/iotaledger/hive.go/ds/types"
-	"github.com/iotaledger/hive.go/ds/walker"
-	"github.com/iotaledger/hive.go/lo"
+	"github.com/izuc/zipp.foundation/ds/orderedmap"
+	"github.com/izuc/zipp.foundation/ds/types"
+	"github.com/izuc/zipp.foundation/ds/walker"
+	"github.com/izuc/zipp.foundation/lo"
 )
 
 // AdvancedSet is a set that offers advanced features.

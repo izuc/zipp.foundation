@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/iotaledger/hive.go/lo"
-	"github.com/iotaledger/hive.go/runtime/syncutils"
+	"github.com/izuc/zipp.foundation/lo"
+	"github.com/izuc/zipp.foundation/runtime/syncutils"
 )
 
 // WorkerPool is a pool of workers that can execute tasks.

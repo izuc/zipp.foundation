@@ -8,7 +8,7 @@ import (
 	"go.dedis.ch/kyber/v3/util/random"
 	"golang.org/x/xerrors"
 
-	"github.com/iotaledger/hive.go/crypto"
+	"github.com/izuc/zipp.foundation/crypto"
 )
 
 const (

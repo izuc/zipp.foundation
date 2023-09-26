@@ -8,8 +8,8 @@ import (
 
 	"nhooyr.io/websocket"
 
-	"github.com/iotaledger/hive.go/logger"
-	"github.com/iotaledger/hive.go/runtime/event"
+	"github.com/izuc/zipp.foundation/logger"
+	"github.com/izuc/zipp.foundation/runtime/event"
 )
 
 var (

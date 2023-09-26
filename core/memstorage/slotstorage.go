@@ -3,8 +3,8 @@ package memstorage
 import (
 	"sync"
 
-	"github.com/iotaledger/hive.go/core/slot"
-	"github.com/iotaledger/hive.go/ds/shrinkingmap"
+	"github.com/izuc/zipp.foundation/core/slot"
+	"github.com/izuc/zipp.foundation/ds/shrinkingmap"
 )
 
 // SlotStorage is an evictable storage that stores storages for slots.

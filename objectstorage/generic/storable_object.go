@@ -1,6 +1,6 @@
 package generic
 
-import "github.com/iotaledger/hive.go/objectstorage"
+import "github.com/izuc/zipp.foundation/objectstorage"
 
 // StorableObject is an interface to be implemented by an object that is stored in the ObjectStorage.
 type StorableObject interface {

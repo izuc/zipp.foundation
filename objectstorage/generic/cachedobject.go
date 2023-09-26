@@ -3,9 +3,9 @@ package generic
 import (
 	"strconv"
 
-	"github.com/iotaledger/hive.go/kvstore"
-	"github.com/iotaledger/hive.go/objectstorage"
-	"github.com/iotaledger/hive.go/stringify"
+	"github.com/izuc/zipp.foundation/kvstore"
+	"github.com/izuc/zipp.foundation/objectstorage"
+	"github.com/izuc/zipp.foundation/stringify"
 )
 
 // region CachedObject //////////////////////////////////////////////////////////////////////////////////////////

@@ -11,13 +11,13 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/iotaledger/hive.go/autopeering/peer"
-	"github.com/iotaledger/hive.go/autopeering/salt"
-	pb "github.com/iotaledger/hive.go/autopeering/selection/proto"
-	"github.com/iotaledger/hive.go/autopeering/server"
-	"github.com/iotaledger/hive.go/crypto/identity"
-	"github.com/iotaledger/hive.go/logger"
-	"github.com/iotaledger/hive.go/runtime/backoff"
+	"github.com/izuc/zipp.foundation/autopeering/peer"
+	"github.com/izuc/zipp.foundation/autopeering/salt"
+	pb "github.com/izuc/zipp.foundation/autopeering/selection/proto"
+	"github.com/izuc/zipp.foundation/autopeering/server"
+	"github.com/izuc/zipp.foundation/crypto/identity"
+	"github.com/izuc/zipp.foundation/logger"
+	"github.com/izuc/zipp.foundation/runtime/backoff"
 )
 
 const (

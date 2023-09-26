@@ -3,8 +3,8 @@ package valuerange
 import (
 	"golang.org/x/xerrors"
 
-	"github.com/iotaledger/hive.go/serializer/v2/marshalutil"
-	"github.com/iotaledger/hive.go/stringify"
+	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/stringify"
 )
 
 // EndPoint contains information about where ValueRanges start and end. It combines a threshold value with a BoundType.

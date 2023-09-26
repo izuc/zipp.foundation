@@ -1,4 +1,4 @@
-module github.com/iotaledger/hive.go/serializer/v2
+module github.com/izuc/zipp.foundation/serializer/v2
 
 go 1.20
 

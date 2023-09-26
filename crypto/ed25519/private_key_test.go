@@ -6,7 +6,7 @@ import (
 	"github.com/oasisprotocol/ed25519"
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/lo"
+	"github.com/izuc/zipp.foundation/lo"
 )
 
 func TestPrivateKeyFromBytesTooShort(t *testing.T) {

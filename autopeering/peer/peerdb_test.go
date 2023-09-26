@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/crypto/ed25519"
-	"github.com/iotaledger/hive.go/kvstore/mapdb"
+	"github.com/izuc/zipp.foundation/crypto/ed25519"
+	"github.com/izuc/zipp.foundation/kvstore/mapdb"
 )
 
 func TestPeerDB(t *testing.T) {

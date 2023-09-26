@@ -6,9 +6,9 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/iotaledger/hive.go/ds/orderedmap"
-	"github.com/iotaledger/hive.go/lo"
-	"github.com/iotaledger/hive.go/runtime/syncutils"
+	"github.com/izuc/zipp.foundation/ds/orderedmap"
+	"github.com/izuc/zipp.foundation/lo"
+	"github.com/izuc/zipp.foundation/runtime/syncutils"
 )
 
 // Group is a group of WorkerPools that can be managed as a whole.

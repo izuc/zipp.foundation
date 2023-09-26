@@ -6,7 +6,7 @@ import (
 	"go.dedis.ch/kyber/v3/sign/bdn"
 	"golang.org/x/xerrors"
 
-	"github.com/iotaledger/hive.go/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
 )
 
 // PrivateKey is the type of BLS private keys.

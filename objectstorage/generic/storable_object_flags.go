@@ -1,5 +1,5 @@
 package generic
 
-import "github.com/iotaledger/hive.go/objectstorage"
+import "github.com/izuc/zipp.foundation/objectstorage"
 
 type StorableObjectFlags = objectstorage.StorableObjectFlags

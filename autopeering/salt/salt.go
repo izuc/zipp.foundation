@@ -8,7 +8,7 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	pb "github.com/iotaledger/hive.go/autopeering/salt/proto"
+	pb "github.com/izuc/zipp.foundation/autopeering/salt/proto"
 )
 
 // SaltByteSize specifies the number of bytes used for the salt.

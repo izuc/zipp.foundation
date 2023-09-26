@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/autopeering/peer/service"
-	"github.com/iotaledger/hive.go/autopeering/salt"
-	"github.com/iotaledger/hive.go/crypto/ed25519"
-	"github.com/iotaledger/hive.go/crypto/identity"
+	"github.com/izuc/zipp.foundation/autopeering/peer/service"
+	"github.com/izuc/zipp.foundation/autopeering/salt"
+	"github.com/izuc/zipp.foundation/crypto/ed25519"
+	"github.com/izuc/zipp.foundation/crypto/identity"
 )
 
 func TestID(t *testing.T) {

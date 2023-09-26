@@ -7,10 +7,10 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/iotaledger/hive.go/constraints"
-	"github.com/iotaledger/hive.go/ds/shrinkingmap"
-	"github.com/iotaledger/hive.go/runtime/event"
-	"github.com/iotaledger/hive.go/runtime/options"
+	"github.com/izuc/zipp.foundation/constraints"
+	"github.com/izuc/zipp.foundation/ds/shrinkingmap"
+	"github.com/izuc/zipp.foundation/runtime/event"
+	"github.com/izuc/zipp.foundation/runtime/options"
 )
 
 var (

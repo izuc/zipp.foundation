@@ -7,13 +7,13 @@ import (
 	"github.com/jellydator/ttlcache/v2"
 	"github.com/pkg/errors"
 
-	"github.com/iotaledger/hive.go/autopeering/mana"
-	"github.com/iotaledger/hive.go/autopeering/peer"
-	"github.com/iotaledger/hive.go/autopeering/salt"
-	"github.com/iotaledger/hive.go/crypto/identity"
-	"github.com/iotaledger/hive.go/lo"
-	"github.com/iotaledger/hive.go/logger"
-	"github.com/iotaledger/hive.go/runtime/timeutil"
+	"github.com/izuc/zipp.foundation/autopeering/mana"
+	"github.com/izuc/zipp.foundation/autopeering/peer"
+	"github.com/izuc/zipp.foundation/autopeering/salt"
+	"github.com/izuc/zipp.foundation/crypto/identity"
+	"github.com/izuc/zipp.foundation/lo"
+	"github.com/izuc/zipp.foundation/logger"
+	"github.com/izuc/zipp.foundation/runtime/timeutil"
 )
 
 const (

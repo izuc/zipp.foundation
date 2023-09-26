@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/ds/types"
-	"github.com/iotaledger/hive.go/kvstore/mapdb"
+	"github.com/izuc/zipp.foundation/ds/types"
+	"github.com/izuc/zipp.foundation/kvstore/mapdb"
 )
 
 func Test(t *testing.T) {

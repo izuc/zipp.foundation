@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/iotaledger/hive.go/ds/set"
+	"github.com/izuc/zipp.foundation/ds/set"
 )
 
 func TestRandomMap_RandomUniqueEntries(t *testing.T) {

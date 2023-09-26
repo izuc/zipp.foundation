@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/iotaledger/hive.go/crypto/ed25519"
-	"github.com/iotaledger/hive.go/crypto/identity"
+	"github.com/izuc/zipp.foundation/crypto/ed25519"
+	"github.com/izuc/zipp.foundation/crypto/identity"
 )
 
 func newTestPeerWithID(id byte) *Peer {

@@ -1,16 +1,16 @@
-module github.com/iotaledger/hive.go/objectstorage
+module github.com/izuc/zipp.foundation/objectstorage
 
 go 1.20
 
 require (
 	github.com/cockroachdb/errors v1.9.1
-	github.com/iotaledger/hive.go/core v1.0.0-rc.3.0.20230301113714-efbcc23d2e67
-	github.com/iotaledger/hive.go/ds v0.0.0-20230417083738-41b63759a6b8
-	github.com/iotaledger/hive.go/kvstore v0.0.0-20230417083738-41b63759a6b8
-	github.com/iotaledger/hive.go/lo v0.0.0-20230417083738-41b63759a6b8
-	github.com/iotaledger/hive.go/runtime v0.0.0-20230417113736-1e450e13c023
-	github.com/iotaledger/hive.go/serializer/v2 v2.0.0-rc.1.0.20230411094451-3a6bd8040e05
-	github.com/iotaledger/hive.go/stringify v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/core v1.0.0-rc.3.0.20230301113714-efbcc23d2e67
+	github.com/izuc/zipp.foundation/ds v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/kvstore v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/lo v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/runtime v0.0.0-20230417113736-1e450e13c023
+	github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230411094451-3a6bd8040e05
+	github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8
 	github.com/mr-tron/base58 v1.2.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.2
@@ -37,7 +37,7 @@ require (
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/iancoleman/orderedmap v0.2.0 // indirect
 	github.com/iotaledger/grocksdb v1.7.5-0.20230220105546-5162e18885c7 // indirect
-	github.com/iotaledger/hive.go/constraints v0.0.0-20230417083738-41b63759a6b8 // indirect
+	github.com/izuc/zipp.foundation/constraints v0.0.0-20230417083738-41b63759a6b8 // indirect
 	github.com/klauspost/compress v1.16.4 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect

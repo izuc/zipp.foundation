@@ -3,8 +3,8 @@ package shutdown
 import (
 	"go.uber.org/dig"
 
-	"github.com/iotaledger/hive.go/app"
-	"github.com/iotaledger/hive.go/app/shutdown"
+	"github.com/izuc/zipp.foundation/app"
+	"github.com/izuc/zipp.foundation/app/shutdown"
 )
 
 func init() {

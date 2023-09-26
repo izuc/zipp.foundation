@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/iotaledger/hive.go/lo"
-	"github.com/iotaledger/hive.go/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/lo"
+	"github.com/izuc/zipp.foundation/serializer/v2/serix"
 )
 
 func TestModel(t *testing.T) {

@@ -8,10 +8,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/core/slot"
-	"github.com/iotaledger/hive.go/runtime/debug"
-	"github.com/iotaledger/hive.go/runtime/options"
-	"github.com/iotaledger/hive.go/runtime/workerpool"
+	"github.com/izuc/zipp.foundation/core/slot"
+	"github.com/izuc/zipp.foundation/runtime/debug"
+	"github.com/izuc/zipp.foundation/runtime/options"
+	"github.com/izuc/zipp.foundation/runtime/workerpool"
 )
 
 // region TestFramework ////////////////////////////////////////////////////////////////////////////////////////////////

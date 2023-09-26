@@ -3,7 +3,7 @@ package module
 import (
 	"sync"
 
-	"github.com/iotaledger/hive.go/runtime/event"
+	"github.com/izuc/zipp.foundation/runtime/event"
 )
 
 // Module is a trait that exposes a lifecycle related API, that can be used to create a modular architecture where

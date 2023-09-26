@@ -4,8 +4,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/iotaledger/hive.go/autopeering/peer"
-	"github.com/iotaledger/hive.go/crypto/identity"
+	"github.com/izuc/zipp.foundation/autopeering/peer"
+	"github.com/izuc/zipp.foundation/crypto/identity"
 )
 
 const (

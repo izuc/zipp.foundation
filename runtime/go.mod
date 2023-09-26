@@ -1,13 +1,13 @@
-module github.com/iotaledger/hive.go/runtime
+module github.com/izuc/zipp.foundation/runtime
 
 go 1.20
 
 require (
 	github.com/fjl/memsize v0.0.1
-	github.com/iotaledger/hive.go/constraints v0.0.0-20230417083738-41b63759a6b8
-	github.com/iotaledger/hive.go/ds v0.0.0-20230417083738-41b63759a6b8
-	github.com/iotaledger/hive.go/lo v0.0.0-20230417083738-41b63759a6b8
-	github.com/iotaledger/hive.go/stringify v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/constraints v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/ds v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/lo v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8
 	github.com/pelletier/go-toml/v2 v2.0.7
 	github.com/pkg/errors v0.9.1
 	github.com/sasha-s/go-deadlock v0.3.1
@@ -23,7 +23,7 @@ require (
 	github.com/getsentry/sentry-go v0.20.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/iancoleman/orderedmap v0.2.0 // indirect
-	github.com/iotaledger/hive.go/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c // indirect
+	github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/mr-tron/base58 v1.2.0 // indirect

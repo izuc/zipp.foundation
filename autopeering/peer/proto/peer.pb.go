@@ -7,7 +7,7 @@
 package proto
 
 import (
-	proto "github.com/iotaledger/hive.go/autopeering/peer/service/proto"
+	proto "github.com/izuc/zipp.foundation/autopeering/peer/service/proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

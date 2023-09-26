@@ -1,7 +1,7 @@
 package module
 
 import (
-	"github.com/iotaledger/hive.go/runtime/event"
+	"github.com/izuc/zipp.foundation/runtime/event"
 )
 
 // Interface defines the interface of a module.

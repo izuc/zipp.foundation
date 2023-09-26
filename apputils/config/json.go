@@ -6,8 +6,8 @@ import (
 	"github.com/iancoleman/orderedmap"
 	flag "github.com/spf13/pflag"
 
-	"github.com/iotaledger/hive.go/app/configuration"
-	"github.com/iotaledger/hive.go/apputils/parameter"
+	"github.com/izuc/zipp.foundation/app/configuration"
+	"github.com/izuc/zipp.foundation/apputils/parameter"
 )
 
 type parameterMapJSON struct {

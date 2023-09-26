@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/runtime/workerpool"
+	"github.com/izuc/zipp.foundation/runtime/workerpool"
 )
 
 // TestCausalOrder_Queue tests the queueing of entities in the CausalOrder.

@@ -1,9 +1,9 @@
 package debug
 
 import (
-	"github.com/iotaledger/hive.go/ds/bitmask"
-	"github.com/iotaledger/hive.go/kvstore"
-	"github.com/iotaledger/hive.go/serializer/v2/byteutils"
+	"github.com/izuc/zipp.foundation/ds/bitmask"
+	"github.com/izuc/zipp.foundation/kvstore"
+	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
 )
 
 // Command is a type that represents a specific method in the KVStore.

@@ -1,14 +1,14 @@
-module github.com/iotaledger/hive.go/ds
+module github.com/izuc/zipp.foundation/ds
 
 go 1.20
 
 require (
 	github.com/cockroachdb/errors v1.9.1
 	github.com/emirpasic/gods v1.18.1
-	github.com/iotaledger/hive.go/constraints v0.0.0-20230417083738-41b63759a6b8
-	github.com/iotaledger/hive.go/lo v0.0.0-20230417083738-41b63759a6b8
-	github.com/iotaledger/hive.go/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c
-	github.com/iotaledger/hive.go/stringify v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/constraints v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/lo v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c
+	github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8
 	github.com/mr-tron/base58 v1.2.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.2

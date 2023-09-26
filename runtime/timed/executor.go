@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/iotaledger/hive.go/runtime/options"
+	"github.com/izuc/zipp.foundation/runtime/options"
 )
 
 // region TimedExecutor ////////////////////////////////////////////////////////////////////////////////////////////////

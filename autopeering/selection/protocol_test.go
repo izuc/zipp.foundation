@@ -8,15 +8,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/autopeering/discover"
-	"github.com/iotaledger/hive.go/autopeering/peer"
-	"github.com/iotaledger/hive.go/autopeering/peer/peertest"
-	"github.com/iotaledger/hive.go/autopeering/salt"
-	"github.com/iotaledger/hive.go/autopeering/server"
-	"github.com/iotaledger/hive.go/autopeering/server/servertest"
-	"github.com/iotaledger/hive.go/crypto/identity"
-	"github.com/iotaledger/hive.go/kvstore/mapdb"
-	"github.com/iotaledger/hive.go/logger"
+	"github.com/izuc/zipp.foundation/autopeering/discover"
+	"github.com/izuc/zipp.foundation/autopeering/peer"
+	"github.com/izuc/zipp.foundation/autopeering/peer/peertest"
+	"github.com/izuc/zipp.foundation/autopeering/salt"
+	"github.com/izuc/zipp.foundation/autopeering/server"
+	"github.com/izuc/zipp.foundation/autopeering/server/servertest"
+	"github.com/izuc/zipp.foundation/crypto/identity"
+	"github.com/izuc/zipp.foundation/kvstore/mapdb"
+	"github.com/izuc/zipp.foundation/logger"
 )
 
 const (

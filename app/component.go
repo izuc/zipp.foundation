@@ -7,9 +7,9 @@ import (
 
 	"go.uber.org/dig"
 
-	"github.com/iotaledger/hive.go/app/daemon"
-	"github.com/iotaledger/hive.go/logger"
-	"github.com/iotaledger/hive.go/runtime/workerpool"
+	"github.com/izuc/zipp.foundation/app/daemon"
+	"github.com/izuc/zipp.foundation/logger"
+	"github.com/izuc/zipp.foundation/runtime/workerpool"
 )
 
 // InitFunc gets called as the initialization function of the app.

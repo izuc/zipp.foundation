@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/iotaledger/hive.go/ds/bitmask"
-	"github.com/iotaledger/hive.go/ds/generalheap"
-	"github.com/iotaledger/hive.go/runtime/options"
-	"github.com/iotaledger/hive.go/runtime/timeutil"
+	"github.com/izuc/zipp.foundation/ds/bitmask"
+	"github.com/izuc/zipp.foundation/ds/generalheap"
+	"github.com/izuc/zipp.foundation/runtime/options"
+	"github.com/izuc/zipp.foundation/runtime/timeutil"
 )
 
 // region TimedQueue ///////////////////////////////////////////////////////////////////////////////////////////////////

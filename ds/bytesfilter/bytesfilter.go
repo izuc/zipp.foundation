@@ -3,9 +3,9 @@ package bytesfilter
 import (
 	"sync"
 
-	"github.com/iotaledger/hive.go/ds/shrinkingmap"
-	"github.com/iotaledger/hive.go/ds/types"
-	dsTypes "github.com/iotaledger/hive.go/ds/types"
+	"github.com/izuc/zipp.foundation/ds/shrinkingmap"
+	"github.com/izuc/zipp.foundation/ds/types"
+	dsTypes "github.com/izuc/zipp.foundation/ds/types"
 )
 
 type BytesFilter struct {

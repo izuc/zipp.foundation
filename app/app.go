@@ -14,13 +14,13 @@ import (
 	flag "github.com/spf13/pflag"
 	"go.uber.org/dig"
 
-	"github.com/iotaledger/hive.go/app/configuration"
-	"github.com/iotaledger/hive.go/app/daemon"
-	"github.com/iotaledger/hive.go/app/version"
-	"github.com/iotaledger/hive.go/lo"
-	"github.com/iotaledger/hive.go/logger"
-	"github.com/iotaledger/hive.go/runtime/timeutil"
-	"github.com/iotaledger/hive.go/runtime/workerpool"
+	"github.com/izuc/zipp.foundation/app/configuration"
+	"github.com/izuc/zipp.foundation/app/daemon"
+	"github.com/izuc/zipp.foundation/app/version"
+	"github.com/izuc/zipp.foundation/lo"
+	"github.com/izuc/zipp.foundation/logger"
+	"github.com/izuc/zipp.foundation/runtime/timeutil"
+	"github.com/izuc/zipp.foundation/runtime/workerpool"
 )
 
 const (

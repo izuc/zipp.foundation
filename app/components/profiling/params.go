@@ -1,7 +1,7 @@
 package profiling
 
 import (
-	"github.com/iotaledger/hive.go/app"
+	"github.com/izuc/zipp.foundation/app"
 )
 
 // ParametersProfiling contains the definition of the parameters used by profiling.

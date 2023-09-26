@@ -8,7 +8,7 @@ import (
 	"golang.org/x/xerrors"
 	"google.golang.org/protobuf/proto"
 
-	pb "github.com/iotaledger/hive.go/autopeering/peer/service/proto"
+	pb "github.com/izuc/zipp.foundation/autopeering/peer/service/proto"
 )
 
 // Record defines the mapping between a service ID and its tuple TypePort

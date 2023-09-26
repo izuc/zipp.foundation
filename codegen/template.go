@@ -9,7 +9,7 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/iotaledger/hive.go/lo"
+	"github.com/izuc/zipp.foundation/lo"
 )
 
 // Template is a wrapper around the text/template package that provides a generic way for generating files according

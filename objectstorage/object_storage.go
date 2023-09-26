@@ -6,12 +6,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/iotaledger/hive.go/ds/types"
-	"github.com/iotaledger/hive.go/kvstore"
-	"github.com/iotaledger/hive.go/objectstorage/typeutils"
-	"github.com/iotaledger/hive.go/runtime/event"
-	"github.com/iotaledger/hive.go/runtime/syncutils"
-	"github.com/iotaledger/hive.go/runtime/timed"
+	"github.com/izuc/zipp.foundation/ds/types"
+	"github.com/izuc/zipp.foundation/kvstore"
+	"github.com/izuc/zipp.foundation/objectstorage/typeutils"
+	"github.com/izuc/zipp.foundation/runtime/event"
+	"github.com/izuc/zipp.foundation/runtime/syncutils"
+	"github.com/izuc/zipp.foundation/runtime/timed"
 )
 
 // ObjectStorage is a manual cache which keeps objects as long as consumers are using it.

@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/iotaledger/hive.go/serializer/v2"
+	"github.com/izuc/zipp.foundation/serializer/v2"
 )
 
 func TestDeserializer_ReadObject(t *testing.T) {

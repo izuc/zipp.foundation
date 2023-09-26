@@ -9,10 +9,10 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/iotaledger/grocksdb"
-	"github.com/iotaledger/hive.go/ds/types"
-	"github.com/iotaledger/hive.go/kvstore"
-	"github.com/iotaledger/hive.go/kvstore/utils"
-	"github.com/iotaledger/hive.go/serializer/v2/byteutils"
+	"github.com/izuc/zipp.foundation/ds/types"
+	"github.com/izuc/zipp.foundation/kvstore"
+	"github.com/izuc/zipp.foundation/kvstore/utils"
+	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
 )
 
 type rocksDBStore struct {

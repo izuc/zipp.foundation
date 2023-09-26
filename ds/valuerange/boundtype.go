@@ -5,7 +5,7 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/iotaledger/hive.go/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
 )
 
 // BoundType indicates whether an EndPoint of some ValueRange is contained in the ValueRange itself ("closed") or not
