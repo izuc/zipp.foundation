@@ -9,7 +9,7 @@ import (
 
 	"github.com/cockroachdb/errors"
 
-	"github.com/izuc/zipp.foundation/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer/serix"
 )
 
 // Mutable is the base type for simple mutable models. It should be embedded in a wrapper type.

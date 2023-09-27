@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/izuc/zipp.foundation/serializer/v2"
+	"github.com/izuc/zipp.foundation/serializer"
 )
 
 const (

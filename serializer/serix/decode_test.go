@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/izuc/zipp.foundation/serializer/v2"
-	"github.com/izuc/zipp.foundation/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer"
+	"github.com/izuc/zipp.foundation/serializer/serix"
 )
 
 func TestDecode_Slice(t *testing.T) {

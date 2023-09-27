@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/izuc/zipp.foundation/serializer/v2"
+	"github.com/izuc/zipp.foundation/serializer"
 )
 
 func (api *API) decode(ctx context.Context, b []byte, value reflect.Value, ts TypeSettings, opts *options) (int, error) {

@@ -11,7 +11,7 @@ import (
 	"github.com/izuc/zipp.foundation/kvstore"
 	"github.com/izuc/zipp.foundation/kvstore/typedkey"
 	"github.com/izuc/zipp.foundation/lo"
-	"github.com/izuc/zipp.foundation/serializer/v2"
+	"github.com/izuc/zipp.foundation/serializer"
 )
 
 type Map[K, V serializer.Byter, KPtr serializer.MarshalablePtr[K], VPtr serializer.MarshalablePtr[V]] struct {

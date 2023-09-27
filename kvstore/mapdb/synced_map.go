@@ -6,7 +6,7 @@ import (
 
 	"github.com/izuc/zipp.foundation/kvstore"
 	"github.com/izuc/zipp.foundation/kvstore/utils"
-	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
+	"github.com/izuc/zipp.foundation/serializer/byteutils"
 )
 
 type syncedKVMap struct {

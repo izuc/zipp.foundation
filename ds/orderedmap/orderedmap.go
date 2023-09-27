@@ -6,8 +6,8 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/izuc/zipp.foundation/serializer/v2"
-	"github.com/izuc/zipp.foundation/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer"
+	"github.com/izuc/zipp.foundation/serializer/serix"
 )
 
 // OrderedMap provides a concurrent-safe ordered map.

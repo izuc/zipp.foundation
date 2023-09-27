@@ -14,8 +14,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/izuc/zipp.foundation/serializer/v2"
-	"github.com/izuc/zipp.foundation/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer"
+	"github.com/izuc/zipp.foundation/serializer/serix"
 )
 
 const defaultSeriMode = serializer.DeSeriModePerformValidation

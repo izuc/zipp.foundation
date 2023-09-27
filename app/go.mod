@@ -4,9 +4,9 @@ go 1.20
 
 require (
 	github.com/hashicorp/go-version v1.6.0
-	github.com/izuc/zipp.foundation/lo v0.0.0-20230417083738-41b63759a6b8
-	github.com/izuc/zipp.foundation/logger v0.0.0-20230417083738-41b63759a6b8
-	github.com/izuc/zipp.foundation/runtime v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/lo v0.1.2
+	github.com/izuc/zipp.foundation/logger v0.1.2
+	github.com/izuc/zipp.foundation/runtime v0.1.2
 	github.com/knadh/koanf v1.5.0
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cast v1.5.0
@@ -31,10 +31,10 @@ require (
 	github.com/google/go-github v17.0.0+incompatible // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/iancoleman/orderedmap v0.2.0 // indirect
-	github.com/izuc/zipp.foundation/constraints v0.0.0-20230417083738-41b63759a6b8 // indirect
-	github.com/izuc/zipp.foundation/ds v0.0.0-20230417083738-41b63759a6b8 // indirect
-	github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230228134549-385c1ca29f1c // indirect
-	github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8 // indirect
+	github.com/izuc/zipp.foundation/constraints v0.1.2
+	github.com/izuc/zipp.foundation/ds v0.1.2
+	github.com/izuc/zipp.foundation/serializer v0.1.2
+	github.com/izuc/zipp.foundation/stringify v0.1.2
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect

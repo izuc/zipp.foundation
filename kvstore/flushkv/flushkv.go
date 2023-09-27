@@ -2,7 +2,7 @@ package flushkv
 
 import (
 	"github.com/izuc/zipp.foundation/kvstore"
-	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
+	"github.com/izuc/zipp.foundation/serializer/byteutils"
 )
 
 // flushKVStore is a wrapper to any KVStore that flushes changes immediately.

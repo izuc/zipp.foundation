@@ -4,7 +4,7 @@ import (
 	"golang.org/x/xerrors"
 
 	"github.com/izuc/zipp.foundation/ds/bitmask"
-	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/marshalutil"
 )
 
 // ValueRange defines the boundaries around a contiguous span of Values (i.e. "integers from 1 to 100 inclusive").

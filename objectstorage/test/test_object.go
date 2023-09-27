@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"github.com/izuc/zipp.foundation/objectstorage"
-	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/marshalutil"
 )
 
 type testObject struct {

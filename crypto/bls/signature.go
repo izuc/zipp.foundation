@@ -4,8 +4,8 @@ import (
 	"github.com/mr-tron/base58"
 	"golang.org/x/xerrors"
 
-	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
-	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/byteutils"
+	"github.com/izuc/zipp.foundation/serializer/marshalutil"
 )
 
 // region Signature ////////////////////////////////////////////////////////////////////////////////////////////////////

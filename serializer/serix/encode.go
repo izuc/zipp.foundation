@@ -9,8 +9,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/izuc/zipp.foundation/serializer/v2"
-	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
+	"github.com/izuc/zipp.foundation/serializer"
+	"github.com/izuc/zipp.foundation/serializer/byteutils"
 )
 
 func (api *API) encode(ctx context.Context, value reflect.Value, ts TypeSettings, opts *options) (b []byte, err error) {

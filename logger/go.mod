@@ -3,8 +3,8 @@ module github.com/izuc/zipp.foundation/logger
 go 1.20
 
 require (
-	github.com/izuc/zipp.foundation/lo v0.0.0-20230417083738-41b63759a6b8
-	github.com/izuc/zipp.foundation/runtime v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/lo v0.1.2
+	github.com/izuc/zipp.foundation/runtime v0.1.2
 	github.com/stretchr/testify v1.8.2
 	go.uber.org/zap v1.24.0
 )
@@ -18,10 +18,10 @@ require (
 	github.com/getsentry/sentry-go v0.20.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/iancoleman/orderedmap v0.2.0 // indirect
-	github.com/izuc/zipp.foundation/constraints v0.0.0-20230417083738-41b63759a6b8 // indirect
-	github.com/izuc/zipp.foundation/ds v0.0.0-20230417083738-41b63759a6b8 // indirect
-	github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c // indirect
-	github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8 // indirect
+	github.com/izuc/zipp.foundation/constraints v0.1.2
+	github.com/izuc/zipp.foundation/ds v0.1.2
+	github.com/izuc/zipp.foundation/serializer v0.1.2
+	github.com/izuc/zipp.foundation/stringify v0.1.2
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/mr-tron/base58 v1.2.0 // indirect

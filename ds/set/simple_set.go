@@ -6,8 +6,8 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/izuc/zipp.foundation/ds/types"
-	"github.com/izuc/zipp.foundation/serializer/v2"
-	"github.com/izuc/zipp.foundation/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer"
+	"github.com/izuc/zipp.foundation/serializer/serix"
 )
 
 // simpleSet implements a non-thread safe Set.

@@ -1,7 +1,7 @@
 package marshalutil
 
 import (
-	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
+	"github.com/izuc/zipp.foundation/serializer/byteutils"
 )
 
 // WriteBytes appends the given bytes to the internal buffer.

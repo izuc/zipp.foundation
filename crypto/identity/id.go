@@ -14,8 +14,8 @@ import (
 
 	"github.com/izuc/zipp.foundation/crypto/ed25519"
 	"github.com/izuc/zipp.foundation/lo"
-	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
-	"github.com/izuc/zipp.foundation/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/serix"
 )
 
 var (

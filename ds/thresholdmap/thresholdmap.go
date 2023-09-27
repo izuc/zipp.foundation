@@ -9,8 +9,8 @@ import (
 
 	"github.com/izuc/zipp.foundation/constraints"
 	"github.com/izuc/zipp.foundation/lo"
-	"github.com/izuc/zipp.foundation/serializer/v2"
-	"github.com/izuc/zipp.foundation/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer"
+	"github.com/izuc/zipp.foundation/serializer/serix"
 )
 
 // region Mode /////////////////////////////////////////////////////////////////////////////////////////////////////////

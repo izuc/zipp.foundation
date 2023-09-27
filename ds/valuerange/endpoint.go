@@ -3,7 +3,7 @@ package valuerange
 import (
 	"golang.org/x/xerrors"
 
-	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/marshalutil"
 	"github.com/izuc/zipp.foundation/stringify"
 )
 

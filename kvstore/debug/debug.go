@@ -3,7 +3,7 @@ package debug
 import (
 	"github.com/izuc/zipp.foundation/ds/bitmask"
 	"github.com/izuc/zipp.foundation/kvstore"
-	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
+	"github.com/izuc/zipp.foundation/serializer/byteutils"
 )
 
 // Command is a type that represents a specific method in the KVStore.

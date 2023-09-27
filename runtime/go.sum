@@ -108,8 +108,8 @@ github.com/izuc/zipp.foundation/ds v0.0.0-20230417083738-41b63759a6b8 h1:/dhCBGR
 github.com/izuc/zipp.foundation/ds v0.0.0-20230417083738-41b63759a6b8/go.mod h1:FSSNuwMSehoN7XpOWkugtpRGIYt2Fy+7224flzvyApw=
 github.com/izuc/zipp.foundation/lo v0.0.0-20230417083738-41b63759a6b8 h1:cJaWFUAceMJsborou6Mqt9dc67Wiw+8+AgShVBjMl+I=
 github.com/izuc/zipp.foundation/lo v0.0.0-20230417083738-41b63759a6b8/go.mod h1:kd0u3+9ZHqqWuXeerZy23W7vPOiH8vdEO/VylxuBeqE=
-github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c h1:+NRlIJ4TKMRyvyHrfwBM8z2ZLBy+3vMt6RtQp/Ww2RE=
-github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c/go.mod h1:1A+evr4i4J/ZbIzlEjcehdlvH6mS2uyr9ZYeH7MvdJI=
+github.com/izuc/zipp.foundation/serializer v2.0.0-rc.1.0.20230220125853-8ead6385152c h1:+NRlIJ4TKMRyvyHrfwBM8z2ZLBy+3vMt6RtQp/Ww2RE=
+github.com/izuc/zipp.foundation/serializer v2.0.0-rc.1.0.20230220125853-8ead6385152c/go.mod h1:1A+evr4i4J/ZbIzlEjcehdlvH6mS2uyr9ZYeH7MvdJI=
 github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8 h1:tl9mW1kl+zcWp6hIhpIiBvPHq+vvOl39shzRBF1XrUM=
 github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8/go.mod h1:l/F3cA/+67QdNj+sohv2v4HhmsdOcWScoA+sVYoAE4c=
 github.com/iris-contrib/blackfriday v2.0.0+incompatible/go.mod h1:UzZ2bDEoaSGPbkg6SAB4att1aAwTmVIx/5gCVqeyUdI=

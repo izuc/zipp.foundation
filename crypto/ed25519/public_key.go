@@ -7,7 +7,7 @@ import (
 	"github.com/oasisprotocol/ed25519"
 	"github.com/pkg/errors"
 
-	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/marshalutil"
 )
 
 // PublicKey is the type of Ed25519 public keys.

@@ -4,7 +4,7 @@ package identity
 
 import (
 	"github.com/izuc/zipp.foundation/crypto/ed25519"
-	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/marshalutil"
 )
 
 // LocalIdentity is a node's identity.

@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/izuc/zipp.foundation/kvstore/mapdb"
-	"github.com/izuc/zipp.foundation/serializer/v2/byteutils"
-	"github.com/izuc/zipp.foundation/serializer/v2/marshalutil"
+	"github.com/izuc/zipp.foundation/serializer/byteutils"
+	"github.com/izuc/zipp.foundation/serializer/marshalutil"
 )
 
 func TestNewStructStorage(t *testing.T) {

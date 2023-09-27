@@ -13,7 +13,7 @@ import (
 	"github.com/izuc/zipp.foundation/lo"
 	"github.com/izuc/zipp.foundation/objectstorage"
 	"github.com/izuc/zipp.foundation/runtime/syncutils"
-	"github.com/izuc/zipp.foundation/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer/serix"
 )
 
 // Storable is the base type for all storable models. It should be embedded in a wrapper type.

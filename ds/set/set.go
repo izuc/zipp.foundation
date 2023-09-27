@@ -1,7 +1,7 @@
 package set
 
 import (
-	"github.com/izuc/zipp.foundation/serializer/v2/serix"
+	"github.com/izuc/zipp.foundation/serializer/serix"
 )
 
 // Set is a collection of elements.

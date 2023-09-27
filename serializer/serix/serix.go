@@ -27,7 +27,7 @@ import (
 	"github.com/iancoleman/orderedmap"
 	"github.com/pkg/errors"
 
-	"github.com/izuc/zipp.foundation/serializer/v2"
+	"github.com/izuc/zipp.foundation/serializer"
 )
 
 // Serializable is a type that can serialize itself.

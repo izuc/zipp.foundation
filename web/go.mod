@@ -3,10 +3,10 @@ module github.com/izuc/zipp.foundation/web
 go 1.20
 
 require (
-	github.com/izuc/zipp.foundation/constraints v0.0.0-20230417083738-41b63759a6b8
-	github.com/izuc/zipp.foundation/ds v0.0.0-20230417083738-41b63759a6b8
-	github.com/izuc/zipp.foundation/logger v0.0.0-20230417083738-41b63759a6b8
-	github.com/izuc/zipp.foundation/runtime v0.0.0-20230417083738-41b63759a6b8
+	github.com/izuc/zipp.foundation/constraints v0.1.2
+	github.com/izuc/zipp.foundation/ds v0.1.2
+	github.com/izuc/zipp.foundation/logger v0.1.2
+	github.com/izuc/zipp.foundation/runtime v0.1.2
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.2
 	golang.org/x/crypto v0.8.0
@@ -22,9 +22,9 @@ require (
 	github.com/getsentry/sentry-go v0.20.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/iancoleman/orderedmap v0.2.0 // indirect
-	github.com/izuc/zipp.foundation/lo v0.0.0-20230417083738-41b63759a6b8 // indirect
-	github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c // indirect
-	github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8 // indirect
+	github.com/izuc/zipp.foundation/lo v0.1.2
+	github.com/izuc/zipp.foundation/serializer v0.1.2
+	github.com/izuc/zipp.foundation/stringify v0.1.2
 	github.com/klauspost/compress v1.16.5 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect

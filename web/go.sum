@@ -130,8 +130,8 @@ github.com/izuc/zipp.foundation/logger v0.0.0-20230417083738-41b63759a6b8 h1:3xm
 github.com/izuc/zipp.foundation/logger v0.0.0-20230417083738-41b63759a6b8/go.mod h1:xJ4vqOKuqF5C5+pvjk97zmEc/WEdN1HFK/9jHWBx740=
 github.com/izuc/zipp.foundation/runtime v0.0.0-20230417083738-41b63759a6b8 h1:Z5A3SuWQyhA7lkSnXlc8cXrsEIvTMVggdIJKTgyo0Ik=
 github.com/izuc/zipp.foundation/runtime v0.0.0-20230417083738-41b63759a6b8/go.mod h1:A1z65KX13xC1KrUuH99WHwSuGnTqq0D64l5P9R1fMbc=
-github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c h1:+NRlIJ4TKMRyvyHrfwBM8z2ZLBy+3vMt6RtQp/Ww2RE=
-github.com/izuc/zipp.foundation/serializer/v2 v2.0.0-rc.1.0.20230220125853-8ead6385152c/go.mod h1:1A+evr4i4J/ZbIzlEjcehdlvH6mS2uyr9ZYeH7MvdJI=
+github.com/izuc/zipp.foundation/serializer v2.0.0-rc.1.0.20230220125853-8ead6385152c h1:+NRlIJ4TKMRyvyHrfwBM8z2ZLBy+3vMt6RtQp/Ww2RE=
+github.com/izuc/zipp.foundation/serializer v2.0.0-rc.1.0.20230220125853-8ead6385152c/go.mod h1:1A+evr4i4J/ZbIzlEjcehdlvH6mS2uyr9ZYeH7MvdJI=
 github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8 h1:tl9mW1kl+zcWp6hIhpIiBvPHq+vvOl39shzRBF1XrUM=
 github.com/izuc/zipp.foundation/stringify v0.0.0-20230417083738-41b63759a6b8/go.mod h1:l/F3cA/+67QdNj+sohv2v4HhmsdOcWScoA+sVYoAE4c=
 github.com/iris-contrib/blackfriday v2.0.0+incompatible/go.mod h1:UzZ2bDEoaSGPbkg6SAB4att1aAwTmVIx/5gCVqeyUdI=
