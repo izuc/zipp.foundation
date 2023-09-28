@@ -74,21 +74,29 @@ func (t *TypedStore[K, V, KPtr, VPtr]) Delete(key K) (err error) {
 }
 
 func (t *TypedStore[K, V, KPtr, VPtr]) Iterate(prefix KeyPrefix, callback func(key K, value V) (advance bool), direction ...IterDirection) (err error) {
-	if iterationErr := t.kv.Iterate(prefix, func(key Key, value Value) bool {
+	return t.kv.Iterate(prefix, func(key Key, value Value) bool {
+		// 1. Check for nil Values from KVStore
+		if key == nil || value == nil {
+			// Logging or handling the nil case, for now, we just skip this entry
+			return true
+		}
+
+		// 2. Deserialize key
 		var keyDecoded KPtr = new(K)
-		if _, err = keyDecoded.FromBytes(key); err != nil {
+		if _, err := keyDecoded.FromBytes(key); err != nil {
+			// Handle or log the deserialization error
 			return false
 		}
 
+		// 2. Deserialize value
 		var valueDecoded VPtr = new(V)
-		if _, err = valueDecoded.FromBytes(value); err != nil {
+		if _, err := valueDecoded.FromBytes(value); err != nil {
+			// Handle or log the deserialization error
 			return false
 		}
 
+		// Invoke the user-provided callback
 		return callback(*keyDecoded, *valueDecoded)
-	}, direction...); iterationErr != nil {
-		return errors.Wrap(iterationErr, "failed to iterate over KV store")
-	}
 
-	return
+	}, direction...)
 }
