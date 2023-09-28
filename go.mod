@@ -1,6 +1,6 @@
 module github.com/izuc/zipp.foundation
 
-go 1.21.1
+go 1.20
 
 require (
 	github.com/celestiaorg/smt v0.3.0
