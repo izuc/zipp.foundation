@@ -15,7 +15,7 @@ import (
 	"github.com/izuc/zipp.foundation/kvstore/debug"
 	"github.com/izuc/zipp.foundation/kvstore/mapdb"
 	"github.com/izuc/zipp.foundation/kvstore/pebble"
-	"github.com/izuc/zipp.foundation/kvstore/rocksdb"
+	"github.com/izuc/zipp.foundation/kvstore/zippdb"
 )
 
 var (
@@ -50,12 +50,12 @@ func testStore(t *testing.T, dbImplementation string, realm []byte) (kvstore.KVS
 
 		return pebble.New(db).WithRealm(realm)
 
-	case "rocksdb":
+	case "zippdb":
 		dir := t.TempDir()
-		db, err := rocksdb.CreateDB(dir)
+		db, err := zippdb.CreateDB(dir)
 		require.NoError(t, err, "used db: %s", dbImplementation)
 
-		return rocksdb.New(db).WithRealm(realm)
+		return zippdb.New(db).WithRealm(realm)
 
 	case "debug":
 		return debug.New(mapdb.NewMapDB(), func(command debug.Command, parameters ...[]byte) {

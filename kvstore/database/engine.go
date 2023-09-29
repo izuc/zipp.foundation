@@ -20,7 +20,7 @@ const (
 	EngineDebug   Engine = "debug"
 	EngineMapDB   Engine = "mapdb"
 	EnginePebble  Engine = "pebble"
-	EngineRocksDB Engine = "rocksdb"
+	EngineZIPPDB  Engine = "zippdb"
 )
 
 var (

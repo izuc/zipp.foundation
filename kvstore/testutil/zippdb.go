@@ -5,14 +5,14 @@ import (
 	"testing"
 
 	"github.com/izuc/zipp.foundation/kvstore"
-	"github.com/izuc/zipp.foundation/kvstore/rocksdb"
+	"github.com/izuc/zipp.foundation/kvstore/zippdb"
 )
 
-// RocksDB creates a temporary RocksDBKVStore that automatically gets cleaned up when the test finishes.
-func RocksDB(t *testing.T) (kvstore.KVStore, error) {
+// ZIPPDB creates a temporary ZIPPDBKVStore that automatically gets cleaned up when the test finishes.
+func ZIPPDB(t *testing.T) (kvstore.KVStore, error) {
 	dir := t.TempDir()
 
-	db, err := rocksdb.CreateDB(dir)
+	db, err := zippdb.CreateDB(dir)
 	if err != nil {
 		return nil, err
 	}
@@ -29,7 +29,7 @@ func RocksDB(t *testing.T) (kvstore.KVStore, error) {
 	counter := databaseCounter[t.Name()]
 	databaseCounterMutex.Unlock()
 
-	storeWithRealm, err := rocksdb.New(db).WithRealm([]byte(t.Name() + strconv.Itoa(counter)))
+	storeWithRealm, err := zippdb.New(db).WithRealm([]byte(t.Name() + strconv.Itoa(counter)))
 	if err != nil {
 		return nil, err
 	}

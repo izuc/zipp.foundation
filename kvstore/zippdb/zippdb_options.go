@@ -1,6 +1,6 @@
-package rocksdb
+package zippdb
 
-// Options holds the options used to instantiate the underlying grocksdb.DB.
+// Options holds the options used to instantiate the underlying zippdb.DB.
 type Options struct {
 	compression bool
 	fillCache   bool
@@ -13,7 +13,7 @@ type Options struct {
 // Option is one of the Options.
 type Option func(*Options)
 
-// UseCompression sets opts.SetCompression(grocksdb.ZSTDCompression).
+// UseCompression sets opts.SetCompression(zippdb.ZSTDCompression).
 func UseCompression(compression bool) Option {
 	return func(args *Options) {
 		args.compression = compression

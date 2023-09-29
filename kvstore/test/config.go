@@ -1,5 +1,5 @@
-//go:build !rocksdb
-// +build !rocksdb
+//go:build !zippdb
+// +build !zippdb
 
 package test
 

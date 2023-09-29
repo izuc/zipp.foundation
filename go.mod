@@ -13,7 +13,7 @@ require (
 	github.com/fjl/memsize v0.0.1
 	github.com/hashicorp/go-version v1.6.0
 	github.com/iancoleman/orderedmap v0.2.0
-	github.com/iotaledger/grocksdb v1.7.5-0.20230220105546-5162e18885c7
+	github.com/izuc/zippdb v0.1.0
 	github.com/jellydator/ttlcache/v2 v2.11.1
 	github.com/knadh/koanf v1.5.0
 	github.com/kr/text v0.2.0

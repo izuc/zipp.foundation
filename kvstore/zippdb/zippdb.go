@@ -1,6 +1,6 @@
-//go:build rocksdb
+//go:build zippdb
 
-package rocksdb
+package zippdb
 
 import (
 	"sync"
@@ -8,54 +8,54 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/iotaledger/grocksdb"
 	"github.com/izuc/zipp.foundation/ds/types"
 	"github.com/izuc/zipp.foundation/kvstore"
 	"github.com/izuc/zipp.foundation/kvstore/utils"
 	"github.com/izuc/zipp.foundation/serializer/byteutils"
+	"github.com/izuc/zippdb"
 )
 
-type rocksDBStore struct {
-	instance *RocksDB
+type zippDBStore struct {
+	instance *ZIPPDB
 	dbPrefix []byte
 	closed   *atomic.Bool
 }
 
-// New creates a new KVStore with the underlying RocksDB.
-func New(db *RocksDB) kvstore.KVStore {
-	return &rocksDBStore{
+// New creates a new KVStore with the underlying ZIPPDB.
+func New(db *ZIPPDB) kvstore.KVStore {
+	return &zippDBStore{
 		instance: db,
 		closed:   new(atomic.Bool),
 	}
 }
 
-func (s *rocksDBStore) WithRealm(realm kvstore.Realm) (kvstore.KVStore, error) {
+func (s *zippDBStore) WithRealm(realm kvstore.Realm) (kvstore.KVStore, error) {
 	if s.closed.Load() {
 		return nil, kvstore.ErrStoreClosed
 	}
 
-	return &rocksDBStore{
+	return &zippDBStore{
 		instance: s.instance,
 		closed:   s.closed,
 		dbPrefix: realm,
 	}, nil
 }
 
-func (s *rocksDBStore) WithExtendedRealm(realm kvstore.Realm) (kvstore.KVStore, error) {
+func (s *zippDBStore) WithExtendedRealm(realm kvstore.Realm) (kvstore.KVStore, error) {
 	return s.WithRealm(byteutils.ConcatBytes(s.Realm(), realm))
 }
 
-func (s *rocksDBStore) Realm() []byte {
+func (s *zippDBStore) Realm() []byte {
 	return s.dbPrefix
 }
 
 // builds a key usable using the realm and the given prefix.
-func (s *rocksDBStore) buildKeyPrefix(prefix kvstore.KeyPrefix) kvstore.KeyPrefix {
+func (s *zippDBStore) buildKeyPrefix(prefix kvstore.KeyPrefix) kvstore.KeyPrefix {
 	return byteutils.ConcatBytes(s.dbPrefix, prefix)
 }
 
 // getIterFuncs returns the function pointers for the iteration based on the given settings.
-func (s *rocksDBStore) getIterFuncs(it *grocksdb.Iterator, keyPrefix []byte, iterDirection ...kvstore.IterDirection) (start func(), valid func() bool, move func(), err error) {
+func (s *zippDBStore) getIterFuncs(it *zippdb.Iterator, keyPrefix []byte, iterDirection ...kvstore.IterDirection) (start func(), valid func() bool, move func(), err error) {
 
 	startFunc := it.SeekToFirst
 	validFunc := it.Valid
@@ -96,7 +96,7 @@ func (s *rocksDBStore) getIterFuncs(it *grocksdb.Iterator, keyPrefix []byte, ite
 
 // Iterate iterates over all keys and values with the provided prefix. You can pass kvstore.EmptyPrefix to iterate over all keys and values.
 // Optionally the direction for the iteration can be passed (default: IterDirectionForward).
-func (s *rocksDBStore) Iterate(prefix kvstore.KeyPrefix, consumerFunc kvstore.IteratorKeyValueConsumerFunc, iterDirection ...kvstore.IterDirection) error {
+func (s *zippDBStore) Iterate(prefix kvstore.KeyPrefix, consumerFunc kvstore.IteratorKeyValueConsumerFunc, iterDirection ...kvstore.IterDirection) error {
 	if s.closed.Load() {
 		return kvstore.ErrStoreClosed
 	}
@@ -128,7 +128,7 @@ func (s *rocksDBStore) Iterate(prefix kvstore.KeyPrefix, consumerFunc kvstore.It
 
 // IterateKeys iterates over all keys with the provided prefix. You can pass kvstore.EmptyPrefix to iterate over all keys.
 // Optionally the direction for the iteration can be passed (default: IterDirectionForward).
-func (s *rocksDBStore) IterateKeys(prefix kvstore.KeyPrefix, consumerFunc kvstore.IteratorKeyConsumerFunc, iterDirection ...kvstore.IterDirection) error {
+func (s *zippDBStore) IterateKeys(prefix kvstore.KeyPrefix, consumerFunc kvstore.IteratorKeyConsumerFunc, iterDirection ...kvstore.IterDirection) error {
 	if s.closed.Load() {
 		return kvstore.ErrStoreClosed
 	}
@@ -154,7 +154,7 @@ func (s *rocksDBStore) IterateKeys(prefix kvstore.KeyPrefix, consumerFunc kvstor
 	return nil
 }
 
-func (s *rocksDBStore) Clear() error {
+func (s *zippDBStore) Clear() error {
 	if s.closed.Load() {
 		return kvstore.ErrStoreClosed
 	}
@@ -162,7 +162,7 @@ func (s *rocksDBStore) Clear() error {
 	return s.DeletePrefix(kvstore.EmptyPrefix)
 }
 
-func (s *rocksDBStore) Get(key kvstore.Key) (kvstore.Value, error) {
+func (s *zippDBStore) Get(key kvstore.Key) (kvstore.Value, error) {
 	if s.closed.Load() {
 		return nil, kvstore.ErrStoreClosed
 	}
@@ -177,7 +177,7 @@ func (s *rocksDBStore) Get(key kvstore.Key) (kvstore.Value, error) {
 	return v, nil
 }
 
-func (s *rocksDBStore) Set(key kvstore.Key, value kvstore.Value) error {
+func (s *zippDBStore) Set(key kvstore.Key, value kvstore.Value) error {
 	if s.closed.Load() {
 		return kvstore.ErrStoreClosed
 	}
@@ -185,7 +185,7 @@ func (s *rocksDBStore) Set(key kvstore.Key, value kvstore.Value) error {
 	return s.instance.db.Put(s.instance.wo, byteutils.ConcatBytes(s.dbPrefix, key), value)
 }
 
-func (s *rocksDBStore) Has(key kvstore.Key) (bool, error) {
+func (s *zippDBStore) Has(key kvstore.Key) (bool, error) {
 	if s.closed.Load() {
 		return false, kvstore.ErrStoreClosed
 	}
@@ -198,7 +198,7 @@ func (s *rocksDBStore) Has(key kvstore.Key) (bool, error) {
 	return v.Exists(), nil
 }
 
-func (s *rocksDBStore) Delete(key kvstore.Key) error {
+func (s *zippDBStore) Delete(key kvstore.Key) error {
 	if s.closed.Load() {
 		return kvstore.ErrStoreClosed
 	}
@@ -206,14 +206,14 @@ func (s *rocksDBStore) Delete(key kvstore.Key) error {
 	return s.instance.db.Delete(s.instance.wo, byteutils.ConcatBytes(s.dbPrefix, key))
 }
 
-func (s *rocksDBStore) DeletePrefix(prefix kvstore.KeyPrefix) error {
+func (s *zippDBStore) DeletePrefix(prefix kvstore.KeyPrefix) error {
 	if s.closed.Load() {
 		return kvstore.ErrStoreClosed
 	}
 
 	keyPrefix := s.buildKeyPrefix(prefix)
 
-	writeBatch := grocksdb.NewWriteBatch()
+	writeBatch := zippdb.NewWriteBatch()
 	defer writeBatch.Destroy()
 
 	it := s.instance.db.NewIterator(s.instance.ro)
@@ -228,7 +228,7 @@ func (s *rocksDBStore) DeletePrefix(prefix kvstore.KeyPrefix) error {
 	return s.instance.db.Write(s.instance.wo, writeBatch)
 }
 
-func (s *rocksDBStore) Flush() error {
+func (s *zippDBStore) Flush() error {
 	if s.closed.Load() {
 		return kvstore.ErrStoreClosed
 	}
@@ -236,7 +236,7 @@ func (s *rocksDBStore) Flush() error {
 	return s.instance.Flush()
 }
 
-func (s *rocksDBStore) Close() error {
+func (s *zippDBStore) Close() error {
 	if s.closed.Swap(true) {
 		// was already closed
 		return nil
@@ -245,7 +245,7 @@ func (s *rocksDBStore) Close() error {
 	return s.instance.Close()
 }
 
-func (s *rocksDBStore) Batched() (kvstore.BatchedMutations, error) {
+func (s *zippDBStore) Batched() (kvstore.BatchedMutations, error) {
 	if s.closed.Load() {
 		return nil, kvstore.ErrStoreClosed
 	}
@@ -260,10 +260,10 @@ func (s *rocksDBStore) Batched() (kvstore.BatchedMutations, error) {
 	}, nil
 }
 
-// batchedMutations is a wrapper around a WriteBatch of a rocksDB.
+// batchedMutations is a wrapper around a WriteBatch of a zippDB.
 type batchedMutations struct {
-	kvStore          *rocksDBStore
-	store            *RocksDB
+	kvStore          *zippDBStore
+	store            *ZIPPDB
 	dbPrefix         []byte
 	setOperations    map[string]kvstore.Value
 	deleteOperations map[string]types.Empty
@@ -308,7 +308,7 @@ func (b *batchedMutations) Commit() error {
 		return kvstore.ErrStoreClosed
 	}
 
-	writeBatch := grocksdb.NewWriteBatch()
+	writeBatch := zippdb.NewWriteBatch()
 	defer writeBatch.Destroy()
 
 	b.operationsMutex.Lock()
@@ -325,5 +325,5 @@ func (b *batchedMutations) Commit() error {
 	return b.store.db.Write(b.store.wo, writeBatch)
 }
 
-var _ kvstore.KVStore = &rocksDBStore{}
+var _ kvstore.KVStore = &zippDBStore{}
 var _ kvstore.BatchedMutations = &batchedMutations{}

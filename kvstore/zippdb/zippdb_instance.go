@@ -1,24 +1,24 @@
-//go:build rocksdb
+//go:build zippdb
 
-package rocksdb
+package zippdb
 
 import (
 	"fmt"
 
-	"github.com/iotaledger/grocksdb"
 	"github.com/izuc/zipp.foundation/runtime/ioutils"
+	"github.com/izuc/zippdb"
 )
 
-// RocksDB holds the underlying grocksdb.DB instance and options.
-type RocksDB struct {
-	db *grocksdb.DB
-	ro *grocksdb.ReadOptions
-	wo *grocksdb.WriteOptions
-	fo *grocksdb.FlushOptions
+// ZIPPDB holds the underlying zippdb.DB instance and options.
+type ZIPPDB struct {
+	db *zippdb.DB
+	ro *zippdb.ReadOptions
+	wo *zippdb.WriteOptions
+	fo *zippdb.FlushOptions
 }
 
-// CreateDB creates a new RocksDB instance.
-func CreateDB(directory string, options ...Option) (*RocksDB, error) {
+// CreateDB creates a new ZIPPDB instance.
+func CreateDB(directory string, options ...Option) (*ZIPPDB, error) {
 
 	if err := ioutils.CreateDirectory(directory, 0700); err != nil {
 		return nil, fmt.Errorf("could not create directory: %w", err)
@@ -26,11 +26,11 @@ func CreateDB(directory string, options ...Option) (*RocksDB, error) {
 
 	dbOpts := dbOptions(options)
 
-	opts := grocksdb.NewDefaultOptions()
+	opts := zippdb.NewDefaultOptions()
 	opts.SetCreateIfMissing(true)
-	opts.SetCompression(grocksdb.NoCompression)
+	opts.SetCompression(zippdb.NoCompression)
 	if dbOpts.compression {
-		opts.SetCompression(grocksdb.ZSTDCompression)
+		opts.SetCompression(zippdb.ZSTDCompression)
 	}
 
 	if dbOpts.parallelism > 0 {
@@ -39,27 +39,27 @@ func CreateDB(directory string, options ...Option) (*RocksDB, error) {
 
 	for _, str := range dbOpts.custom {
 		var err error
-		opts, err = grocksdb.GetOptionsFromString(opts, str)
+		opts, err = zippdb.GetOptionsFromString(opts, str)
 		if err != nil {
 			return nil, err
 		}
 	}
 
-	ro := grocksdb.NewDefaultReadOptions()
+	ro := zippdb.NewDefaultReadOptions()
 	ro.SetFillCache(dbOpts.fillCache)
 
-	wo := grocksdb.NewDefaultWriteOptions()
+	wo := zippdb.NewDefaultWriteOptions()
 	wo.SetSync(dbOpts.sync)
 	wo.DisableWAL(dbOpts.disableWAL)
 
-	fo := grocksdb.NewDefaultFlushOptions()
+	fo := zippdb.NewDefaultFlushOptions()
 
-	db, err := grocksdb.OpenDb(opts, directory)
+	db, err := zippdb.OpenDb(opts, directory)
 	if err != nil {
 		return nil, err
 	}
 
-	return &RocksDB{
+	return &ZIPPDB{
 		db: db,
 		ro: ro,
 		wo: wo,
@@ -67,34 +67,34 @@ func CreateDB(directory string, options ...Option) (*RocksDB, error) {
 	}, nil
 }
 
-// OpenDBReadOnly opens a new RocksDB instance in read-only mode.
-func OpenDBReadOnly(directory string, options ...Option) (*RocksDB, error) {
+// OpenDBReadOnly opens a new ZIPPDB instance in read-only mode.
+func OpenDBReadOnly(directory string, options ...Option) (*ZIPPDB, error) {
 
 	dbOpts := dbOptions(options)
 
-	opts := grocksdb.NewDefaultOptions()
-	opts.SetCompression(grocksdb.NoCompression)
+	opts := zippdb.NewDefaultOptions()
+	opts.SetCompression(zippdb.NoCompression)
 	if dbOpts.compression {
-		opts.SetCompression(grocksdb.ZSTDCompression)
+		opts.SetCompression(zippdb.ZSTDCompression)
 	}
 
 	for _, str := range dbOpts.custom {
 		var err error
-		opts, err = grocksdb.GetOptionsFromString(opts, str)
+		opts, err = zippdb.GetOptionsFromString(opts, str)
 		if err != nil {
 			return nil, err
 		}
 	}
 
-	ro := grocksdb.NewDefaultReadOptions()
+	ro := zippdb.NewDefaultReadOptions()
 	ro.SetFillCache(dbOpts.fillCache)
 
-	db, err := grocksdb.OpenDbForReadOnly(opts, directory, true)
+	db, err := zippdb.OpenDbForReadOnly(opts, directory, true)
 	if err != nil {
 		return nil, err
 	}
 
-	return &RocksDB{
+	return &ZIPPDB{
 		db: db,
 		ro: ro,
 	}, nil
@@ -116,23 +116,23 @@ func dbOptions(optionalOptions []Option) *Options {
 }
 
 // Flush the database.
-func (r *RocksDB) Flush() error {
+func (r *ZIPPDB) Flush() error {
 	return r.db.Flush(r.fo)
 }
 
 // Close the database.
-func (r *RocksDB) Close() error {
+func (r *ZIPPDB) Close() error {
 	r.db.Close()
 	return nil
 }
 
 // GetProperty returns the value of a database property.
-func (r *RocksDB) GetProperty(name string) string {
+func (r *ZIPPDB) GetProperty(name string) string {
 	return r.db.GetProperty(name)
 }
 
 // GetIntProperty similar to "GetProperty", but only works for a subset of properties whose
 // return value is an integer. Return the value by integer.
-func (r *RocksDB) GetIntProperty(name string) (uint64, bool) {
+func (r *ZIPPDB) GetIntProperty(name string) (uint64, bool) {
 	return r.db.GetIntProperty(name)
 }
