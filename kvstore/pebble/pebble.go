@@ -88,7 +88,10 @@ func (s *pebbleStore) Iterate(prefix kvstore.KeyPrefix, consumerFunc kvstore.Ite
 
 	start, end := s.getIterBounds(prefix)
 
-	it := s.instance.NewIter(&pebble.IterOptions{LowerBound: start, UpperBound: end})
+	it, err := s.instance.NewIter(&pebble.IterOptions{LowerBound: start, UpperBound: end})
+	if err != nil {
+		return err
+	}
 	defer it.Close()
 
 	startFunc, validFunc, moveFunc := s.getIterFuncs(it, iterDirection...)
@@ -111,7 +114,10 @@ func (s *pebbleStore) IterateKeys(prefix kvstore.KeyPrefix, consumerFunc kvstore
 
 	start, end := s.getIterBounds(prefix)
 
-	it := s.instance.NewIter(&pebble.IterOptions{LowerBound: start, UpperBound: end})
+	it, err := s.instance.NewIter(&pebble.IterOptions{LowerBound: start, UpperBound: end})
+	if err != nil {
+		return err
+	}
 	defer it.Close()
 
 	startFunc, validFunc, moveFunc := s.getIterFuncs(it, iterDirection...)
@@ -203,7 +209,10 @@ func (s *pebbleStore) DeletePrefix(prefix kvstore.KeyPrefix) error {
 
 	if start == nil {
 		// DeleteRange does not work without range, so we have to iterate over all keys and delete them
-		it := s.instance.NewIter(&pebble.IterOptions{LowerBound: start, UpperBound: end})
+		it, err := s.instance.NewIter(&pebble.IterOptions{LowerBound: start, UpperBound: end})
+		if err != nil {
+			return err
+		}
 		defer it.Close()
 
 		b := s.instance.NewBatch()
