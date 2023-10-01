@@ -63,6 +63,7 @@ func New(local *peer.Local, disc DiscoverProtocol, opts ...Option) *Protocol {
 		neighborBlockDuration: defaultNeighborBlockDuration,
 		neighborSkipTimeout:   defaultNeighborSkipTimeout,
 	}
+
 	for _, opt := range opts {
 		opt.apply(args)
 	}
@@ -73,25 +74,42 @@ func New(local *peer.Local, disc DiscoverProtocol, opts ...Option) *Protocol {
 		disc:     disc,
 		log:      args.log,
 	}
+
+	p.log.Info("Entering New function for neighbor selection protocol...")
+
 	p.mgr = newManager(p, disc.GetVerifiedPeers, args.log.Named("mgr"), args)
+
+	// Logging statement to check if this function is being called
+	p.log.Info("Neighbor selection protocol initialized!")
+	p.log.Infof("Local peer details: %v", local)
+	p.log.Infof("Discovery protocol details: %v", disc)
 
 	return p
 }
 
 // Start starts the actual neighbor selection over the provided Sender.
 func (p *Protocol) Start(s server.Sender) {
+	p.log.Info("Starting neighborhood...")
+
 	p.Protocol.Sender = s
 	p.mgr.start()
+
 	p.log.Debug("neighborhood started")
 	p.running.Store(true)
+
+	p.log.Info("Neighbor selection protocol started.")
 }
 
 // Close finalizes the protocol.
 func (p *Protocol) Close() {
+	p.log.Info("Closing neighbor selection protocol...")
+
 	p.closeOnce.Do(func() {
 		p.running.Store(false)
 		p.mgr.close()
 	})
+
+	p.log.Info("Neighbor selection protocol closed.")
 }
 
 // Events returns all the events that are triggered during the neighbor selection.
@@ -135,8 +153,11 @@ func (p *Protocol) UnblockNeighbor(id identity.ID) {
 // HandleMessage responds to incoming neighbor selection messages.
 func (p *Protocol) HandleMessage(s *server.Server, fromAddr *net.UDPAddr, from *identity.Identity, data []byte) (bool, error) {
 	if !p.running.Load() {
+		p.log.Warn("HandleMessage called but protocol is not running.")
 		return false, nil
 	}
+
+	p.log.Infof("Handling message from: %v", fromAddr)
 
 	switch pb.MType(data[0]) {
 	// PeeringRequest
