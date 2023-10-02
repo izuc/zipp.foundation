@@ -8,7 +8,7 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"github.com/izuc/zipp.foundation/app/configuration"
+	"github.com/izuc/zipp.foundation/core/configuration"
 )
 
 var (

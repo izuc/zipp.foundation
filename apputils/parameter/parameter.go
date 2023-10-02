@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/izuc/zipp.foundation/app/configuration"
+	"github.com/izuc/zipp.foundation/core/configuration"
 )
 
 const (

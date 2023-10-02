@@ -5,10 +5,11 @@ import (
 	"strings"
 
 	"github.com/fbiville/markdown-table-formatter/pkg/markdown"
+
 	flag "github.com/spf13/pflag"
 
-	"github.com/izuc/zipp.foundation/app/configuration"
 	"github.com/izuc/zipp.foundation/apputils/parameter"
+	"github.com/izuc/zipp.foundation/core/configuration"
 )
 
 func escapeAsterisk(text string) string {
