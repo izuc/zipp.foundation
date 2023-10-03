@@ -6,8 +6,8 @@ import (
 	"github.com/iancoleman/orderedmap"
 	flag "github.com/spf13/pflag"
 
-	"github.com/izuc/zipp.foundation/app/configuration"
 	"github.com/izuc/zipp.foundation/apputils/parameter"
+	"github.com/izuc/zipp.foundation/core/configuration"
 )
 
 type parameterMapJSON struct {
